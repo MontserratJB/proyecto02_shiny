@@ -30,5 +30,15 @@ presupuesto <-
     quiet = TRUE
   )
 
+#Lectura de via primaria
+# Lectura de una capa vectorial (GeoJSON) de distritos de Montes de Oca
+viaprimaria <-
+  st_read(
+    "https://raw.githubusercontent.com/MontserratJB/proyecto02_shiny/master/viaprimaria.geojson",
+    quiet = TRUE
+  )
+
+
 # Asignación de un CRS al objeto presupuesto
 st_crs(presupuesto) <- 4326
+
