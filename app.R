@@ -30,11 +30,10 @@ presupuesto <-
     quiet = TRUE
   )
 
-#Lectura de via primaria
-# Lectura de una capa vectorial (GeoJSON) de distritos de Montes de Oca
+#Lectura de vias primarias
 viaprimaria <-
   st_read(
-    "https://raw.githubusercontent.com/MontserratJB/proyecto02_shiny/master/viaprimaria.geojson",
+    "https://raw.githubusercontent.com/MontserratJB/proyecto02_shiny/master/viasprimarias.geojson",
     quiet = TRUE
   )
 
